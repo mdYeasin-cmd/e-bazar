@@ -3,10 +3,11 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/Navbar/Navbar'
+import Shop from '@/components/Shop/Shop'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({products}) {
   return (
     <>
       <Head>
@@ -16,7 +17,20 @@ export default function Home() {
         <link rel="icon" href="/Logo/logo.png" />
       </Head>
       <Navbar />
-      <h1>This is home</h1>
+      <Shop products={products} />
     </>
   )
+}
+
+export const getStaticProps = async () => {
+
+  const res = await fetch('http://localhost:5000/products');
+  const data = await res.json();
+
+  return {
+      props: {
+          products: data
+      }
+  }
+
 }
