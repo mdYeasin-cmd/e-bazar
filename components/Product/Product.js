@@ -16,8 +16,8 @@ const Product = ({ product }) => {
                     <p>Seller: ${seller}</p>
                     <p>Ratings: {ratings} stars</p>
                     <div className="card-actions justify-between mb-3 mt-2">
-                        <button className="btn btn-primary">See Details</button>
-                        <button className="btn btn-primary">Buy Now</button>
+                        <button className="btn bg-[#F55E3D] hover:bg-[#FDB334] border-0">See Details</button>
+                        <button className="btn bg-[#F55E3D] hover:bg-[#FDB334] border-0">Buy Now</button>
                     </div>
                 </div>
             </div>

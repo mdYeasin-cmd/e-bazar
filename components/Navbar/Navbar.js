@@ -5,7 +5,7 @@ const Navbar = () => {
         <div>
             {/* Navbar */}
             <nav className="flex justify-between text-[#34526e] w-screen shadow-lg">
-                <div className="px-10 xl:px-12 py-2 flex justify-between w-full items-center">
+                <div className="px-14 xl:px-12 py-2 flex justify-between w-full items-center">
 
                     {/* Logo Here */}
                     <Link className="flex items-center text-3xl font-bold font-heading" href="/">
