@@ -1,6 +1,7 @@
 import CartItem from "@/components/CartItem/CartItem";
 import Navbar from "@/components/Navbar/Navbar";
 import Head from "next/head";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Cart = ({ products }) => {
@@ -52,6 +53,11 @@ const Cart = ({ products }) => {
                     className="text-center text-3xl font-semibold mt-16"
                 >No product added yet.</h1>
             }
+            <div className="flex justify-center">
+                <Link href="/checkout">
+                    <button className="text-2xl py-3 w-96 mx-auto mb-3 font-medium text-white bg-[#F55E3D] hover:bg-[#FDB334] border-0">Checkout Now</button>
+                </Link>
+            </div>
         </div>
     );
 };
