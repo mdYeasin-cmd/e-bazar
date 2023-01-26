@@ -12,7 +12,8 @@ const Dashboard = () => {
                 <link rel="icon" href="/Logo/logo.png" />
             </Head>
             <Navbar />
-            <h1>This is Dashboard</h1>
+            <h1 className="text-2xl w-[500px] text-center mx-auto mt-8">Dashboard for different types of user will be comming here soon. And It will be Protected route. It Interface dependes on user role.</h1>
+            <h2 className="text-xl w-[500px] bg-[#F55E3D] text-white p-2 text-center mx-auto mt-8">If increase practical task time 2 or 3 days I can add multivandor role on this website in Dashboard and Can also work with UI.</h2>
         </div>
     );
 };

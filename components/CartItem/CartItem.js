@@ -19,7 +19,6 @@ const CartItem = ({ item }) => {
                 </div>
                 <div className={styles.delete_container}>
                     <button className={styles.btn_delete}>
-                        {/* <FontAwesomeIcon className="delete-icon" ></FontAwesomeIcon> */}
                         <RiDeleteBin5Fill className={styles.delete_icon} />
                     </button>
                 </div>

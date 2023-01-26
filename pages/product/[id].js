@@ -28,8 +28,6 @@ export const getStaticProps = async (context) => {
 
     const id = context.params.id;
 
-    console.log(context);
-
     const res = await fetch(`http://localhost:5000/products/${id}`);
     const data = await res.json();
 
@@ -89,7 +87,6 @@ const ProductDetails = ({ product }) => {
 
                 <div>
                     <button onClick={() => handleAddToCart(product)} className="text-2xl py-3 w-96 mx-auto mb-3 font-medium text-white bg-[#F55E3D] hover:bg-[#FDB334] border-0">Add To Cart</button>
-                    {/* <h3 onClick={() => handleAddToCart(product)} className="text-xl font-semibold text-[#F55E3D] my-4">Ad To Cart</h3> */}
                 </div>
 
             </div>

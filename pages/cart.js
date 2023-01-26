@@ -14,24 +14,15 @@ const Cart = ({ products }) => {
         setStoredCart(cartItems)
     }, []);
 
-    console.log(storedCart);
-
     const initialCart = [];
     for (const id in storedCart) {
         const addedProduct = products.find(product => product._id === id);
-        // console.log(addedProduct);
         if (addedProduct) {
             const quantity = storedCart[id];
-            console.log(quantity);
             addedProduct.quantity = quantity;
             initialCart.push(addedProduct);
         }
-        // console.log(addedProduct);
     }
-
-    console.log(initialCart);
-
-
 
     return (
         <div>
