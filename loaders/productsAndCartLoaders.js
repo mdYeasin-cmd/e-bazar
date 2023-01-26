@@ -2,7 +2,7 @@ import { getStoredCart } from "../utilities/fakedb";
 
 export const getStaticProps = async () => {
 
-    const res = await fetch('http://localhost:5000/products');
+    const res = await fetch('https://e-bazar-server.vercel.app/products');
     const data = await res.json();
 
     return {
@@ -15,7 +15,7 @@ export const getStaticProps = async () => {
 
 export const productsAndCartLoader = ({ products }) => {
     // get Products
-    // const productsData = await fetch('http://localhost:5000/products');
+    // const productsData = await fetch('https://e-bazar-server.vercel.app/products');
     // const products = await productsData.json();
     console.log(products);
     // get Cart
