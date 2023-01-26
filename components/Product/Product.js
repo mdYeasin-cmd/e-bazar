@@ -18,7 +18,7 @@ const Product = ({ product, handleAddToCart }) => {
                     <p>Seller: ${seller}</p>
                     <p>Ratings: {ratings} stars</p>
                     <div className="card-actions justify-between mb-3 mt-2">
-                        <Link href={`product/${product?._id}`}>
+                        <Link href={`/product/${product?._id}`}>
                             <button className="btn bg-[#F55E3D] hover:bg-[#FDB334] border-0">See Details</button>
                         </Link>
                         <button onClick={() => handleAddToCart(product)} className="btn bg-[#F55E3D] hover:bg-[#FDB334] border-0">Add To Cart</button>
