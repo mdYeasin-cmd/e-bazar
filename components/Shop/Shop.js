@@ -1,6 +1,6 @@
 import Product from "../Product/Product";
 
-const Shop = ({ products }) => {
+const Shop = ({ products, handleAddToCart }) => {
 
     return (
         <div className="p-14">
@@ -9,6 +9,7 @@ const Shop = ({ products }) => {
                     products.map(product => <Product
                         key={product._id}
                         product={product}
+                        handleAddToCart={handleAddToCart}
                     ></Product>)
                 }
             </div>
