@@ -15,8 +15,6 @@ const Checkout = () => {
 
             <Navbar />
 
-            <h1>This is checkout page</h1>
-
             <div className="w-[400px] my-10 mx-auto shadow-2xl rounded-lg p-5">
                 <h3 className="text-2xl text-center font-medium">SUMMERY</h3>
                 <div className="flex justify-between my-3">

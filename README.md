@@ -1,7 +1,7 @@
 ## E Bazar - An Ecommerce solution website
 
-Live Site Link - 
-GitHub Code Link - 
+Live Site Link - https://e-bazar-orcin.vercel.app/
+GitHub Code Link - https://github.com/mdYeasin-cmd/e-bazar
 
 ## Used Technologies
 
@@ -11,7 +11,7 @@ GitHub Code Link -
 - Tailwind CSS
 - Daisy UI
 
-### Packages
+### Package
 
 - React Icon
 
